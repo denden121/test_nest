@@ -9,7 +9,7 @@ export class Book{
     @Column()
     title: string;
 
-    @ManyToOne(()=>Author,author => Author.name)
+    @ManyToOne(()=>Author,author => author.id)
     author: Author;
 
     @Column()

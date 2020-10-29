@@ -9,7 +9,7 @@ import { AuthorModule } from './author/author.module';
   imports: [
       TypeOrmModule.forRoot({
         type: 'sqlite',
-        database: 'db',
+        database: 'db1',
         entities: [__dirname + '/**/*.entity{.ts,.js}'],
         synchronize: true,
       }),
